@@ -1,0 +1,90 @@
+.navbar-container{
+    width: 100%;
+    position: fixed;
+    background-color: #29CD9C;
+    height: 76px;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.navbar{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.nav-items ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    color: #E6E6E6;
+}
+
+.nav-items{
+    justify-content: center;
+    flex: 4;
+}
+
+.nav-items li {
+    margin-left: 1.2rem;
+    cursor: pointer;    
+    color: white;
+}
+
+.logo{
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    flex: 2;
+}
+
+.sigin-button{
+    flex: 2;
+}
+
+.links{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.whatsapp{
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.links:hover{
+    color: #E6E6E6;
+}
+
+.whatsapp{
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+@media(max-width: 768px){
+    .nav-items{
+        display: none;
+    }
+    
+    .logo{
+        display: none;
+    }
+    .sigin-button{
+       text-align: end;
+    }
+}
+
+@media(min-width: 769px){
+    .button-toggle{
+        display: none;
+    }
+}

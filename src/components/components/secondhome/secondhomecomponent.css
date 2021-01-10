@@ -1,0 +1,41 @@
+.second-container{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.essay{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.essay-service{
+    width: 80%;
+}
+.essay-service header{
+    font-size: 2.5rem;
+    margin: 2rem;
+    font-weight: bold;
+    color: #29CD9C;
+}
+.essay-service section{
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    color: #7e7e7e;
+}
+
+.guarantee{
+    margin: 6rem;
+}
+
+
+.guarantee h1{
+    font-size: 3rem;
+    font-weight: bold;
+    color: #29CD9C;
+}
+
+
+.button-holer{
+    margin: 4rem;
+}

@@ -1,0 +1,49 @@
+.footer-container{
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    background: #29CD9C;
+    flex-direction: row;
+}
+
+
+.footer-left{
+flex: 1;
+}
+
+.contact-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-right{
+flex: 2;
+background: chocolate;
+}
+
+.contact-info{
+    color: white;
+}
+
+.payment-methods{
+    margin-top: 6rem;
+    color: white;
+}
+
+.payment-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+.navigations li{
+    list-style: none;
+    display: inline;
+    margin: 3rem;
+    color: white;
+    font-size: 1.2rem;
+}

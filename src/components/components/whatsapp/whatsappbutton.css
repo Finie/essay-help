@@ -1,0 +1,27 @@
+.whatsapp-button-container{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 1.3rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+    color: white;
+    background: #29CD9C;
+}
+
+
+@media(max-width: 768px){
+    .whatsapp-button-container{
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        float: right;
+        align-self: baseline;
+    }
+  }
