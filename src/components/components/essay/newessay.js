@@ -4,7 +4,7 @@ import Button from '../Button/Button'
 
 export default function NewEssay() {
   const [pages, setPages] = useState(1);
-  const [data, setData] = useState([])
+  // const [data, setData] = useState([])
 
   const [selected, setSelected] = useState("")
   const [deadline, seDeadline] = useState("")
@@ -12,10 +12,11 @@ export default function NewEssay() {
   const handleSelect = e => {
     setSelected(e.target.value)
   }
-  const handleSubmit = ({ pages, selected, email }) => {
-    setData(data.push({ pages, selected, email }))
-    console.log(data)
+  const handleSubmit = (pages, selected, email ) => {
+    
+    console.log(pages+" "+selected+" "+email)
   }
+
 
   return (
     <div style={{ marginTop: "45px" }}>
@@ -89,7 +90,7 @@ export default function NewEssay() {
 
         <div className="input-field">
           <label htmlFor="button"></label>
-          <Button onClick={handleSubmit} >Continue &gt; &gt;</Button>
+          <Button onClick={handleSubmit(pages,deadline,selected,email)} >Continue &gt; &gt;</Button>
         </div>
       </form>
     </div>

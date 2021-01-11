@@ -6,11 +6,11 @@ import './whatsappbutton.css'
 function Whatsappbutton(props){
 
     return(
-        <div className="whatsapp-button-container">
+        <a target="_blank" rel="noreferrer" href={props.url} className="whatsapp-button-container">
            
             {props.children}
             
-            </div>
+            </a>
     );
 }
 

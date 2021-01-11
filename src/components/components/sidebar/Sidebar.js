@@ -1,7 +1,6 @@
 import React from 'react'
 
 import { Link } from 'react-router-dom'
-import { FaWhatsapp } from 'react-icons/fa'
 
 import './sidebar.css'
 function Sidebar(props){

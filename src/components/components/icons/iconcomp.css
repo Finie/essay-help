@@ -1,0 +1,47 @@
+.icon-component{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 3rem;
+    background: #29CD9C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: box-shadow 0.3s ease-out;
+}
+
+.icon-item{
+    width: 3rem;
+    height: 6rem;
+    color: white;
+}
+
+.icon-component:hover{
+    transition: box-shadow 0.3s ease-out;
+    box-shadow: 1px 1px 7px 5px rgb(0,0,0,0.2);
+}
+
+
+
+.icon-component-small{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 3rem;
+    background: #29CD9C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    transition: box-shadow 0.3s ease-out;
+}
+
+.icon-item-small{
+    width: 1.5rem;
+    height: 3rem;
+    color: white;
+}
+
+.icon-component-small:hover{
+    transition: box-shadow 0.3s ease-out;
+    box-shadow: 1px 1px 7px 5px rgb(0,0,0,0.2);
+}

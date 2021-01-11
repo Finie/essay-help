@@ -57,7 +57,7 @@ function App() {
         </Switch>
         <Chatbot/>
         <div className="whatsapp-contact">
-          <Button><a target="_blank" rel="noreferrer" href="https://wa.me/254715438186" style={{textDecoration:'none', color:'white'}}>  <IoLogoWhatsapp  style={{marginBottom:-3, marginRight:4}}/> whatsApp</a></Button>
+          <Button url={"https://wa.me/254715438186"}><span> <IoLogoWhatsapp  style={{marginBottom:-3, marginRight:4}}/> whatsApp</span></Button>
         </div>
         <Footer/>
       </Router>
