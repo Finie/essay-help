@@ -45,12 +45,19 @@ button {
     margin-right: 20px;
 }
 
-.input-field input,
-textarea,
-select {
+input:focus, textarea:focus, select:focus, button:focus{
+    outline: none;
+    box-shadow: 2px 2px 5px 3px rgb(41,205,156,0.2);
+}
+
+.input-field input,textarea,select {
     border: 1px solid teal;
-    border-radius: 6px;
+    border-radius: 3rem;
     width: 65%;
+    -webkit-appearance: none;
+    appearance: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
     margin-right: 20px;
 }
 

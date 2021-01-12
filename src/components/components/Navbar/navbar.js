@@ -10,7 +10,7 @@ import './navbar.css'
 
 
 
-function Navbar({clickHandler}){
+function Navbar({clickHandler,backdropClick}){
 
 return(
 <header className="navbar-container">
@@ -27,7 +27,7 @@ return(
             </ul>
         </div>
         
-        <div className="sigin-button"><Button icon="AiOutlineLogin">Sign in</Button></div>
+        <div className="sigin-button"><Link style={{ textDecoration: 'none' }} to={"/login"}><Button onclick={backdropClick} icon="AiOutlineLogin"> Sign in</Button></Link></div>
     </nav>
 </header>
 );
