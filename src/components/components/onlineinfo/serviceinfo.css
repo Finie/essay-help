@@ -51,6 +51,7 @@
     margin: 1rem;
     border-radius: 1.5rem;
     width: 10rem;
+    transition: box-shadow 0.7s ease-out;
     transition: transform 0.5s ease-out;
     
 }
@@ -58,6 +59,9 @@
 
 
 .service-item:hover{
+    
+    transition: box-shadow 0.5s ease-out;
+    transition: transform 0.5s ease-out;
     transform: scale(1.02);
     box-shadow: 1px 1px 7px 2px rgb(0,0,0,0.2);
 }

@@ -1,4 +1,6 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 import {BsCheckCircle} from 'react-icons/bs'
 import Essay from '../essay/newessay'
@@ -7,6 +9,9 @@ import './componentone.css'
 
 
 function Componentone(){
+    useEffect(() => {
+        AOS.init({ duration: 700});
+    }, [])
 return(
     
     <div className="first-container">
@@ -15,8 +20,8 @@ return(
 
     <div className="info-holder">
 
-        <h1>Get an A or refund Take our online class help. We specialise in:</h1>
-        <ul className="services">
+        <h1 data-aos="fade-up" >Get an A or refund Take our online class help. We specialise in:</h1>
+        <ul data-aos="fade-down" className="services">
             <li><BsCheckCircle/> Homework help</li>
             <li><BsCheckCircle/> Take my exam</li>
             <li><BsCheckCircle/> Take my online class help</li>
@@ -30,7 +35,7 @@ return(
         </div>
     </div>
 
-    <div className="order-holder">
+    <div data-aos="zoom-in" className="order-holder">
         <Essay />
     </div>
 

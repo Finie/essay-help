@@ -14,7 +14,11 @@ function Howitworks(){
 
 
 return(
-    <div className="howitworks-container">
+    <div className="howitworks-container clearfix">
+
+        ehdjwed;alkdlkasflklsfkladfklasdklfmkregjfelefs;'c;lsdmcksdmkmskdcmsdkms'ad;fkwofkorfkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk
+
+{/* 
        <div className="header">
        <h1>How Essay<span style={{color:' #F4D140'}}>help</span> it works</h1>
          <Iconcomp iconName={"RiFileInfoLine"} />
@@ -51,7 +55,9 @@ return(
 
            </div>
        </div>
-       </div>
+       </div> */}
+
+
     </div>
 )
 }

@@ -1,13 +1,18 @@
 .App {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   text-align: center;
-  width: 100%;
+  max-width: 100%;
+  overflow-x: scroll;
+  min-height: 100vh ;
+  height: 100%;
+  background:rgb(245, 244, 244);
+
 }
 
-.whatsapp-contact{
+
+
+/* .whatsapp-contact{
   position: fixed;
   bottom: 0;
   left: 0;
@@ -15,4 +20,4 @@
   align-self: baseline;
   transition: 0.5s;
   width: 275px;
-}
+} */

@@ -1,26 +1,35 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+
 import Lottie from 'react-lottie'
 
 import './lottiecontainerLeft.css'
 
 
-function lottiecontainerLeft({animationData,title,body}){
+function LottiecontainerLeft({animationData,title,body}){
+
     const defaultOptions = {
         loop: true,
         autoplay: true, 
         animationData: animationData,
        
     }
+
+    useEffect(() => {
+        AOS.init({ duration: 700 })
+    }, [])
+    
     return(
     <div className="lottieLeft-container">
 
-        <div className="lottie-file">
+        <div data-aos="fade-right" className="lottie-file">
            <Lottie options={defaultOptions}
               height={400}
             width={400}/>
         </div>
 
-        <div className="content-info"> 
+        <div data-aos="fade-left" className="content-info"> 
         <h1>{title}</h1>
         <p>{body}</p>
         </div>
@@ -31,4 +40,4 @@ function lottiecontainerLeft({animationData,title,body}){
 }
 
 
-export default lottiecontainerLeft;
+export default LottiecontainerLeft;

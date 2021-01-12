@@ -7,7 +7,7 @@
   background-image: url("../../../assets/background.jpg"), linear-gradient(rgba(	0, 0, 0,0.5),rgba(	0, 0, 0,0.5));
   background-blend-mode: overlay;
   background-size:cover;
-  width: 100%;
+  min-width: 1140px;
 }
 
 .spacer{

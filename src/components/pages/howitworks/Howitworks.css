@@ -1,7 +1,9 @@
 .howitworks-container{
     margin-top: 76px;
     width: 100%;
+    display: block;
 }
+
 
 .header{
     min-height: 100vh;
