@@ -23,8 +23,6 @@ return(
                 <li><Link to={"/howitworks"} className="links">How It Works</Link></li>
                 <li><Link to={"/reviews"} className="links">Review</Link></li>
                 <li><Link to={"/pricing"} className="links">Pricing</Link></li>
-                <li><Link to={"/blogs"} className="links">Blog</Link></li>
-                <li><Link to={"/orders"} className="links">Order</Link></li>
                 <li><a target="_blank" rel="noreferrer" href="https://wa.me/254715438186" className="whatsapp">Whatsapp us <FaWhatsapp  style={{ marginTop: 4, marginLeft:2}}/>  </a></li>
             </ul>
         </div>
