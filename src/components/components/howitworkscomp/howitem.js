@@ -1,9 +1,16 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
 
 
 import './howitem.css'
 
-function howitem({data}){
+function Howitem({data}){
+
+    useEffect(() => {
+        AOS.init({ duration: 700});
+    }, [])
+    
 
     let alignmentClass = "howitem-container"
 
@@ -13,11 +20,11 @@ function howitem({data}){
 
     return(
         <div className={alignmentClass}>
-            <header>{data.title}</header>
-            <section>{data.body}</section>
+            <header data-aos="fade-up">{data.title}</header>
+            <section data-aos="fade-up">{data.body}</section>
         </div>
     );
 }
 
 
-export default howitem;
+export default Howitem;

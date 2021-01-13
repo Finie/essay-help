@@ -8,7 +8,6 @@ function Sidebar(props){
     let sideBarClass = 'side-bar';
     if(props.show){
         sideBarClass = 'side-bar open'
-        console.log("sidebar opened")
     }
 
     return(

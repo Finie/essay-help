@@ -1,4 +1,6 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import Lottie from 'react-lottie'
 
 
@@ -7,6 +9,10 @@ import './lottiecontainerRight.css'
 
 function LottiecontainerRight({animationData,title,body}){
 
+    useEffect(() => {
+        AOS.init({ duration: 700});
+    }, [])
+
     const defaultOptions = {
         loop: true,
         autoplay: true, 
@@ -14,15 +20,15 @@ function LottiecontainerRight({animationData,title,body}){
        
     }
     return(
-<div className="lottieLeft-container">
+<div data-aos="zoom-in" className="lottieLeft-container">
 
 <div className="separatie"/>
 
-<div className="content-info"> 
+<div data-aos="zoom-in" className="content-info"> 
 <h1>{title}</h1>
 <p>{body}</p>
 </div>
-<div className="lottie-file">
+<div data-aos="zoom-in" className="lottie-file">
    <Lottie options={defaultOptions}
       height={400}
     width={400}/>

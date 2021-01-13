@@ -1,9 +1,9 @@
 import React from 'react'
 import { MdRateReview } from 'react-icons/md'
-import Reviewitem from '../../components/review/reviewitem'
-import Button from '../../components/Button/Button'
+import Reviewitem from '../../../components/review/reviewitem'
+import Button from '../../../components/Button/Button'
 import './reviews.css'
-import { reviewData } from '../../../assets/data/reviewData'
+import { reviewData } from '../../../../assets/data/reviewData'
 function Review(){
 
 return(

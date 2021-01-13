@@ -12,7 +12,10 @@
 .input-form-container{
     min-width: 30rem;
     border-radius: 2rem;    
-    transition:  box-shadow 0.5s ease-out;      
+    transform: scale(1.05);
+    transition:  box-shadow 0.2s ease-out;  
+    transition:  transform 0.2s ease-out;
+    box-shadow: 3px 3px 10px 2px rgba(0, 0, 0, 0.3);    
     overflow: hidden; 
 }
 
@@ -24,8 +27,9 @@
 
 
 .input-form-container:hover{
-
-    transition:  box-shadow 0.5s ease-out;
+    transition:  box-shadow 0.2s ease-out;
+    transition:  transform 0.2s ease-out;
+    transform: scale(1.0);
     box-shadow: 3px 3px 7px 5px rgba(0, 0, 0, 0.3);
 
 }

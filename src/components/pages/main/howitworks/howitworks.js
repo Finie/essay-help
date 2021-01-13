@@ -1,17 +1,24 @@
-import React from 'react'
+import React, {useEffect} from 'react'
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 import { IoLogoWhatsapp } from 'react-icons/io'
 
 
 import './Howitworks.css'
-import HowItem from '../../components/howitworkscomp/howitem'
-import {howLeftData} from '../../../assets/data/howleft'
-import {howRightData} from '../../../assets/data/howRight'
-import Iconcomp from '../../components/icons/iconcomp'
-import Button from "../../components/whatsapp/whatsappbutton"
+import HowItem from '../../../components/howitworkscomp/howitem'
+import {howLeftData} from '../../../../assets/data/howleft'
+import {howRightData} from '../../../../assets/data/howRight'
+import Iconcomp from '../../../components/icons/iconcomp'
+import Button from "../../../components/whatsapp/whatsappbutton"
 
 
 function Howitworks(){
 
+    useEffect(() => {
+        AOS.init({ duration: 700});
+    }, [])
+    
 
 return(
     <div className="howitworks-container">
@@ -34,7 +41,7 @@ return(
                    else{
                        return(
                         <div className="contains-icon">
-                        <div className="icon_">
+                        <div data-aos="fade-up" className="icon_">
                         <Iconcomp iconName={item.icon} />
                         </div>
                         <div className="info_">

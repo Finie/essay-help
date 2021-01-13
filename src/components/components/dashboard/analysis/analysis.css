@@ -1,0 +1,49 @@
+.analysis-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.analysis-wraper{
+    margin: 2rem;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    transform: scale(1.02);
+    transition:  box-shadow 0.2s ease-out;  
+    transition:  transform 0.2s ease-out;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3); 
+}
+
+.analysis-wraper:hover{
+    transition:  box-shadow 0.2s ease-out;
+    transition:  transform 0.2s ease-out;
+    transform: scale(1.0);
+    box-shadow: 0.5px 0.5px 1px 0.5px rgba(0, 0, 0, 0.3);  
+}
+
+.analysis-top{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.analysis-top header{
+    color: #7e7e7e;
+}
+
+
+.icon-div{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.main-text{
+    font-weight: bold;
+    font-size: medium;
+    margin-left: 1.2rem;
+}
+
+
