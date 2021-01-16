@@ -62,6 +62,7 @@ function App() {
             <Route exact path="/user-management" component={UserManagement} />
             <Route exact path="/settings" component={Settings} />
           </Switch>
+        
         </Router>
       ) : (
         <Router>

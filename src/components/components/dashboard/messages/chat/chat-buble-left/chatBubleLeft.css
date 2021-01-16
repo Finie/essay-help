@@ -1,0 +1,29 @@
+.chat-bubble-left{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+}
+
+.message-and-time{
+    background: #29CD9C;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+    padding: 1rem;
+    max-width: 300px;
+}
+
+.message-container-chat{
+    color: white;
+    text-align: start;
+}
+
+.message-time{
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+}

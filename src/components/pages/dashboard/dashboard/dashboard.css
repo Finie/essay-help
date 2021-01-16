@@ -32,11 +32,40 @@
     padding: 1rem;
 }
 
+.message-header-chat-bot{
+    background: #dddddd;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: medium;
+    padding: 1rem;
+}
+
+.conversations{
+    overflow-y: scroll;
+    max-height: 500px;
+}
+
+.text-filed{
+    flex: 2.8;
+}
+
+.text-filed textarea{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.send-button{
+    flex: 0.2;
+}
+
 .message-items{
     margin: 1rem;
     flex: 2;
     border-radius: 1rem;
     overflow: hidden;
+    height: fit-content;
     box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3); 
 }
 
