@@ -24,7 +24,7 @@ import DashboardNav from "./components/components/dashboard/dashboard-menu/MenuB
 import DashboardSide from "./components/components/dashboard/dashboard-sidebar/DashboardSide";
 
 function App() {
-  const [isUserLoggedin, setIsUserLoggedin] = useState(true);
+  const [isUserLoggedin, setIsUserLoggedin] = useState(false);
   const [isSideDrawerOpen, setIsSideDrawerOpen] = useState(false);
   const [isDashboardOpen, setIsDashboardOpen] = useState(true);
 

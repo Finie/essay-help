@@ -13,7 +13,7 @@ return(
                 <div className="contact-ho">
                 <h3>Contact</h3>
                 </div>                
-                <div className="contact-item"><IoIosMail style={{width:"2rem", height:"2rem", marginRight:6,marginTop:8}}/><p>info@essayhelp.com</p></div>
+                <div className="contact-item"><IoIosMail style={{width:"2rem", height:"2rem", marginRight:6,marginTop:8}}/><p>info@legalessaywriters.com</p></div>
                 <div className="contact-item"><MdPhone style={{width:"2rem", height:"2rem", marginRight:6,marginTop:8}}/><p>+1212345756</p></div>
             </div>
 
@@ -53,7 +53,7 @@ return(
 
             <div className="rights-reserved">
                 <p><span dangerouslySetInnerHTML={{ "__html": "&copy;" }} />2019 - {current_year}</p>
-            <p>Essay<span style={{color:' #F4D140'}}>help</span></p>
+            <p>Legal<span style={{color:' #F4D140'}}>Essay</span>Writers</p>
              <p>all rights reserved</p>
             <p><span>Built with <BsFillHeartFill style={{color:'red',marginBottom:-3}}/> by <a rel="noreferrer" target="_blank" style={{color:"white"}} href="https://phenius-muthomi.web.app/">Fin</a></span></p>
             </div>

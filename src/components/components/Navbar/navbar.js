@@ -16,7 +16,7 @@ return(
 <header className="navbar-container">
     <nav className="navbar">
         <div className="button-toggle"><MenuButton click={clickHandler}/></div>
-        <div className="logo">Essay<span style={{color:' #F4D140'}}>help</span></div>
+        <div className="logo">Legal<span style={{color:' #F4D140'}}>Essay</span>Writers</div>
         <div className="nav-items">
             <ul className="nav-list">
                 <li><Link to={"/"} className="links">Home</Link></li>

@@ -16,7 +16,7 @@ function ChatBox() {
   return (
     <div className="bot-container">
       <div className={active ? "chat-box-active" : "chat-box"}>
-        <div className="chat-header" onClick={toggleChatBox}><BiMessageAltDots style={{ marginTop:4}}/> Essay<span style={{color:' #F4D140'}}>help </span>  chat</div>
+        <div className="chat-header" onClick={toggleChatBox}><BiMessageAltDots style={{ marginTop:4}}/> Legal<span style={{color:' #F4D140'}}>Essay</span>Writers  chat</div>
         <Chatbot
           config={config}
           messageParser={MessageParser}

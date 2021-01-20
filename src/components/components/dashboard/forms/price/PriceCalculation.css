@@ -1,0 +1,16 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    width: max-content;
+
+}
+
+.field{
+    margin-top: 2rem;
+    width: 80%;
+}
+
+.form{
+    background: chartreuse;
+}
+

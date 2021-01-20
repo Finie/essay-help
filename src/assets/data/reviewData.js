@@ -18,7 +18,7 @@ export const reviewData ={
             name: "Customer 36597",
             type_essay: "creative writing",
             writer: "Margy Best Writer",
-            message:"Got a unbelievable 96/100 in my microbiology class lol !!!!!!!! biology sucks. Thank you Essay help",
+            message:"Got a unbelievable 96/100 in my microbiology class lol !!!!!!!! biology sucks. Thank you Legal Essay Writers",
             time: "2 hours ago",
         },
         {
@@ -53,14 +53,14 @@ export const reviewData ={
             name: "How it works",
             type_essay: "Mathematics",
             writer: "Prof. Catherine Owens",
-            message:"I was afraid of failing my math class, damn they were perfect, and they scored 94 bring my score to B. essay help are life savers.",
+            message:"I was afraid of failing my math class, damn they were perfect, and they scored 94 bring my score to B. Legal Essay Writers are life savers.",
             time: "30 minutes ago",
         },
         {
             name: "Customer 34678",
             type_essay: "dissertation",
             writer: "Professor John",
-            message:"I lost my dad I couldn’t concentrate on my algebra class 2 months ago, I searched online and landed on essay help, despite paying 180$ per week, they have handled everything and reduced my stress. This has helped me to concentrate on work and my family . Thank you",
+            message:"I lost my dad I couldn’t concentrate on my algebra class 2 months ago, I searched online and landed on Legal Essay Writers, despite paying 180$ per week, they have handled everything and reduced my stress. This has helped me to concentrate on work and my family . Thank you",
             time: "21 minutes ago",
         }
     ]

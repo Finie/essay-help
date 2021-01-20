@@ -1,5 +1,4 @@
 .dash-orders-container{
-    background: violet;
     min-height: 100vh;
     width: 100%;
 }
@@ -7,5 +6,4 @@
 .order-item-holder{
     margin-top: 76px;
     margin-left: 300px;
-    background: tomato;
 }

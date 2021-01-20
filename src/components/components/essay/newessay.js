@@ -12,6 +12,7 @@ export default function NewEssay() {
   const handleSelect = e => {
     setSelected(e.target.value)
   }
+  
   const handleSubmit = (pages, selected, email ) => {
     
     console.log(pages+" "+selected+" "+email)
