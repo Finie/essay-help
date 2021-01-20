@@ -1,0 +1,39 @@
+.chat-bubble-right{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin: 1rem;
+
+}
+
+.message-and-time-right{
+    background: #DDDDDD;
+    border-radius: 1rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1rem;
+    padding: 1rem;
+    max-width: 300px;
+}
+
+.message-container-chat-right{
+    color: black;
+    text-align: start;
+}
+
+.message-time-right{
+    color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.icon-chat{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}

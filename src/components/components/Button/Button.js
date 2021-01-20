@@ -20,7 +20,7 @@ function Button(props){
 
 
     return(
-        <div className={buttonClass}>
+        <div  onClick={props.onclick} className={buttonClass}>
             {Icon}
             {props.children}
             

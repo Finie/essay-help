@@ -1,0 +1,11 @@
+.dash-settings-container{
+    background: violet;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.settings-item-holder{
+    margin-top: 76px;
+    margin-left: 300px;
+    background: tomato;
+}

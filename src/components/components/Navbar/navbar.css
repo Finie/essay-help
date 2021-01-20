@@ -21,6 +21,9 @@
     padding: 0;
     margin: 0;
     display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
     color: #E6E6E6;
 }
 
@@ -29,10 +32,9 @@
     flex: 4;
 }
 
-.nav-items li {
+.nav-items ul li {
     margin-left: 1.2rem;
-    cursor: pointer;    
-    color: white;
+    cursor: pointer;  
 }
 
 .logo{
@@ -46,6 +48,7 @@
 .sigin-button{
     flex: 2;
 }
+
 
 .links{
     color: white;
@@ -67,6 +70,8 @@
     display: flex;
     flex-direction: row;
 }
+
+
 
 
 

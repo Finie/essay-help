@@ -1,0 +1,47 @@
+.reviews-container{
+    margin-top: 76px;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 3rem;
+}
+
+.reviews{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.desctiption{
+    width: 60%;
+    margin-bottom: 3rem;
+}
+.desctiption section{
+    font-size: 1.2rem;
+    color: white;
+}
+
+.leading{
+    background: #29CD9C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 3rem;
+}
+
+.leading h1{
+    color: white;
+    font-size: 2.5rem;
+}
+
+.note{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: white;
+    margin-top: 3rem;
+}
