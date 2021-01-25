@@ -11,6 +11,7 @@
 .price-info{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -52,14 +53,15 @@
 
 .left-description{
     flex: 1;
-    padding: 3rem;
+    padding: 1rem;
 }
 
 
 .price-holder{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
 }
 
@@ -90,4 +92,25 @@
     margin: 3rem;
     font-size: 1.2rem;
     color: #7e7e7e;
+}
+
+@media(max-width: 768px){
+
+    .bottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .notice{
+        width: 100%;
+        text-align: start;
+        font-size: medium;
+        color: #7e7e7e;
+    }
+    
+    .pricetag{
+       
+    }
 }

@@ -20,8 +20,8 @@
     .whatsapp-button-container{
         position: fixed;
         bottom: 0;
-        right: 0;
-        float: right;
+        left: 0;
+        float: left;
         align-self: baseline;
     }
   }

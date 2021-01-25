@@ -3,6 +3,8 @@
     width: 100%;
     background: #29CD9C;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -64,6 +66,7 @@ padding: 3rem;
     justify-content: center;
     align-items: center;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .navigation{
@@ -71,6 +74,7 @@ padding: 3rem;
     flex-direction: column;
     justify-content: flex-end;
     align-items: flex-end;
+    flex-wrap: wrap;
 }
 
 .navigations li{
@@ -105,6 +109,7 @@ padding: 3rem;
     flex-direction: row;
     justify-content: flex-end;
     align-items: flex-end;
+    flex-wrap: wrap;
     color: white;
 }
 

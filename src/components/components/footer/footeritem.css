@@ -1,0 +1,58 @@
+.footer-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background: #29cd9c;
+  position: relative;
+}
+
+.footer-left {
+}
+
+.footer-right {
+}
+
+.footer-navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.navigation-list {
+  list-style: none;
+  display: inline;
+  margin-left: 3rem;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+
+@media(max-width: 768px){
+    .navigation{
+        display: none;
+    }
+
+    .rights-reserved{
+        margin-top: 3rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        color: white;
+    }
+
+    .payment-methods{
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+        margin-bottom: 3rem;
+        color: white;
+    }
+    
+        
+}

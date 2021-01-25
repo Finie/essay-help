@@ -3,7 +3,6 @@ import React from 'react'
 import './pricingcomp.css'
 function Pricingcomp({data}){
 
-
 return(
 <div  className="pricingcomp-contaoner">
     <div className="pricing-header">

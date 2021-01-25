@@ -5,13 +5,11 @@
     flex-direction: column;
     width: 100%;
     min-height: 100vh;
-    height: 100%;
 }
 
 
 .input-form-container{
-    min-width: 30rem;
-    border-radius: 2rem;    
+    border-radius: 1rem;    
     transform: scale(1.05);
     transition:  box-shadow 0.2s ease-out;  
     transition:  transform 0.2s ease-out;
@@ -38,6 +36,7 @@
     margin: 3rem;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: flex-end;
     align-items: flex-end;
 

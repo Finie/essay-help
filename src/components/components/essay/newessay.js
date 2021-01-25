@@ -33,7 +33,7 @@ export default function NewEssay() {
         </div>
 
         <div className="input-field">
-          <label htmlFor="paper">Type of Paper</label>
+          <label htmlFor="paper">Paper</label>
           <select name="paper" id="paper" onChange={handleSelect}>
             <option value="Select One">Select One</option>
             <option value="Admission Essay">Admission Essay</option>
