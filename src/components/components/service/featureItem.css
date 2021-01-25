@@ -1,0 +1,16 @@
+.feature-service {
+  background: white;
+  margin: 2rem;
+  max-width: 25rem;
+  overflow: hidden;
+  border-radius: 1rem;
+}
+
+.feature-header header{
+    color: #29CD9C;
+    font-size: 1.5rem;
+}
+
+.feature-body{
+    padding: 1rem;
+}

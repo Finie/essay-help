@@ -1,6 +1,7 @@
 .review-item{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     margin: 1rem;
     width: 60%;
 }
@@ -64,6 +65,7 @@
 .client-name{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: flex-start;
     justify-content: flex-start;
 }
@@ -72,4 +74,43 @@
     color: #7e7e7e;
     font-size: 1rem;
     margin-left: 2rem;
+}
+
+
+@media(max-width: 768px){
+    .review-item{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .image-bg{
+        width: 2rem;
+        height: 2rem;    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 2rem;
+        background: #29CD9C;
+        box-shadow: 0px 2px 5px 0px rgb(0,0,0,0.2);
+    }
+    
+    .icon{
+        width: 1rem;
+        height: 1rem;
+        color: white;
+    }
+
+    .time-posted p{
+        color: #7e7e7e;
+        font-size: medium;
+        margin-right: 2rem;
+    }
+
+    .client-name p{
+        color: #7e7e7e;
+        font-size: small;
+        margin-left: 2rem;
+    }
 }

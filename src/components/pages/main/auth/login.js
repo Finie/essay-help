@@ -9,7 +9,6 @@ import Forminput from "../../../components/input/forminput";
 import "./login.css";
 
 function Login() {
-  
   useEffect(() => {
     AOS.init({ duration: 700 });
   }, []);

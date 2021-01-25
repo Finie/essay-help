@@ -69,3 +69,32 @@
     justify-content: space-evenly;
     align-items: center;
 }
+
+
+@media(max-width: 768px){
+    .online-info header{
+        font-size: 2rem;
+        color: #29CD9C;
+        margin: 2rem;
+    }
+    
+    .online-info section{
+        font-size: 1.2rem;
+        width: 70%;
+        margin-bottom: 2rem;
+    }
+    
+    .online-info p{
+        font-size: 1.0rem;
+        width: 70%;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+
+    .service-info header{
+        font-size: 2rem;
+        color: #29CD9C;
+        margin: 2rem;
+    }
+    
+}

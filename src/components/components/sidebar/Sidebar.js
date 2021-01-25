@@ -12,7 +12,7 @@ function Sidebar(props){
 
     return(
         <nav className={sideBarClass}>
-            <div className="logo-holder">Essay<span style={{color:' #F4D140'}}>help</span></div>
+            <div className="logo-holder">Legal<span style={{color:' #F4D140'}}>essay</span>writers</div>
             <ul className="nav-list">
                 <li><Link to={"/"} onClick={props.backdropClick} className="links">Home</Link></li>
                 <li><Link to={"/howitworks"} onClick={props.backdropClick} className="links">How It Works</Link></li>
