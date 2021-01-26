@@ -1,4 +1,5 @@
 import React from 'react'
+import Analysis from '../../../components/dashboard/analysis/analysis';
 import PriceCalculation from '../../../components/dashboard/forms/price/PriceCalculation'
 
 
@@ -10,8 +11,8 @@ function Orders(){
     return(
         <div className="dash-orders-container">
             <div className="order-item-holder">
-                <h1>Hello again guys this this the order section</h1>
-                <PriceCalculation />
+               <PriceCalculation />
+              
             </div>
 
         </div>

@@ -1,16 +1,83 @@
-.form{
+.price-container{
     display: flex;
     flex-direction: column;
-    width: max-content;
+    justify-content: center;
+    align-items: flex-start;
+    height: 400px;
+    min-width: 600px;
+    padding: 2rem;
+    border-radius: 2rem;
+    background: white;
 
 }
 
-.field{
-    margin-top: 2rem;
-    width: 80%;
+.day-date{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
-.form{
+.top-sep{
+    width: 100%;
+}
+.items_one{
+
+    width: 100%;
+
+}
+
+
+.page-division{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 3rem;
+}
+.drop{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+.days{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex: 2.5;
+}
+
+.time{
+    flex: 1.5;
+}
+
+.input-pages{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+    padding-left: 16px;
     background: chartreuse;
 }
 
+.input-pages{
+    color: #7e7e7e;
+    font-size: small;
+    margin: 0;
+    padding: 0;
+
+}
+
+.radio-button{
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 16px;
+    align-items: center;
+    flex-direction: column;
+}
+.radio{
+    margin-top: 3px;
+}
