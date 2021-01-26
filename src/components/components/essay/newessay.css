@@ -42,6 +42,7 @@ button {
     font-size: 14px;
     width: 40px;
     margin-right: 20px;
+    margin-left: 20px;
 }
 
 input:focus, textarea:focus, select:focus, button:focus{
