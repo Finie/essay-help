@@ -21,7 +21,7 @@ export default function NewEssay() {
 
   return (
     <div style={{ marginTop: "45px" }}>
-      <form id="essay-form">
+      <form className="essay-form" id="essay-form">
         <h1>Give Your Grades A Boost</h1>
 
         <div className="input-field">
@@ -53,7 +53,7 @@ export default function NewEssay() {
           <div className="buttons-div">
             <div className="buttons">
 
-            <button type="button" disabled={pages <= 1} className="" onClick={() => {
+            <button className="button" type="button" disabled={pages <= 1}  onClick={() => {
                   if (pages > 1) {
                     let page = pages;
                     setPages((page -= 1));
@@ -65,7 +65,7 @@ export default function NewEssay() {
                 <p>{pages}</p>
               </div>
 
-              <button type="button" className="" onClick={() => {
+              <button className="button" type="button" onClick={() => {
 
                    // check that pages is >= 1
                    let page = pages;

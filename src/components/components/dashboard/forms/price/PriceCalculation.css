@@ -1,83 +1,125 @@
-.price-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    height: 400px;
-    min-width: 600px;
-    padding: 2rem;
-    border-radius: 2rem;
-    background: white;
-
+.price-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 400px;
+  min-width: 600px;
+  padding: 2rem;
+  border-radius: 2rem;
+  background: white;
+  
+  box-shadow: 1px 1px 7px 5px rgb(0,0,0,0.2);
 }
 
-.day-date{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+.day-date {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
-.top-sep{
-    width: 100%;
+.top-sep {
+  width: 100%;
 }
-.items_one{
-
-    width: 100%;
-
+.items_one {
+  width: 100%;
 }
 
-
-.page-division{
+.price-button{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-left: 3rem;
-}
-.drop{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-}
-.days{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: center;
-    flex: 2.5;
+    align-items: flex-end;
+    justify-content: flex-end;
 }
 
-.time{
-    flex: 1.5;
+.discounts {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
 }
 
-.input-pages{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    padding-top: 10px;
-    padding-left: 16px;
-    background: chartreuse;
+.discounts header {
+  margin-right: 3rem;
 }
 
-.input-pages{
-    color: #7e7e7e;
-    font-size: small;
-    margin: 0;
-    padding: 0;
+.page-division {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3rem;
+}
+
+.total-price {
+  margin-top: 3rem;
+}
+
+.total-price header {
+  font-weight: bold;
+  font-size: larger;
 
 }
 
-.radio-button{
-    display: flex;
-    justify-content: flex-start;
-    padding-left: 16px;
-    align-items: center;
-    flex-direction: column;
+.drop {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
-.radio{
-    margin-top: 3px;
+.days {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex: 2.5;
+}
+
+.time {
+  flex: 1.5;
+}
+
+.input-pages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
+  padding-left: 16px;
+}
+
+.input-pages {
+  color: #7e7e7e;
+  font-size: small;
+  margin: 0;
+  padding: 0;
+}
+
+.radio-button {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 16px;
+  align-items: center;
+  flex-direction: column;
+}
+.radio {
+  margin-top: 3px;
+}
+
+.button {
+  color: white;
+  background-color: #F4D140;
+  text-align: center;
+  text-transform: uppercase;
+  height: 40px;
+  border-style: none;
+  border-radius: 20px;
+  padding: 0 14px;
+  font-size: 14px;
+  width: 40px;
+  margin-right: 20px;
+  margin-left: 20px;
 }

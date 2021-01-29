@@ -1,5 +1,4 @@
 import React from "react";
-import { useTable } from "react-table";
 import { AiFillDelete } from "react-icons/ai";
 import { RiRadioButtonLine } from "react-icons/ri";
 
@@ -8,14 +7,19 @@ import { userInfo } from "../../../../assets/data/userinfo";
 
 function ManageUsers() {
   return (
+
+
     <div className="dash-manageUsers-container">
       <div className="manageUsers-item-holder">
+     
         <div className="breadcrumbs">
           <span>User Management</span>
           <div className="spacer-manage" />
           <span>Admin</span>
         </div>
-        <h1>Hello again guys this this the User management section</h1>
+        <h1>Hello again guys this this the Account settings section dffjd jdfd  jdjfdfdf jdj d dd fhfhk djdjd hgfgfgkh gcghgh vkhhv kghfghf</h1>
+      
+   
         <div className="table">
           <table>
             <thead>
@@ -55,6 +59,8 @@ function ManageUsers() {
         </div>
       </div>
     </div>
+
+
   );
 }
 

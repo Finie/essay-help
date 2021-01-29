@@ -5,14 +5,45 @@
 
 
 .order-item-holder{
+    margin-left: 300px;
     margin-top: 76px;
     min-height: 100vh;
-    min-width: 100%;
-    margin-left: 300px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background: crimson;
+    margin-bottom: 3rem;
+}
+
+
+.steps{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 3rem;
+}
+
+.line{
+    width: 60%;
+    height: 3px;
+    border-style: solid;
+    color: #7e7e7e;
+    border-width: 1px;
+    border-radius: 1rem;
+}
+
+.line-active{
+    width: 60%;
+    height: 3px;
+    background: #29CD9C;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 1rem;
+}
+
+.name-active{
+    color: #29CD9C;
 }

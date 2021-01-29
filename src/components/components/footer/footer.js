@@ -32,7 +32,7 @@ return(
 
 </div>
 
-{/* 
+
         <div className="footer-left">
 
             <div className="contact-info">
@@ -89,7 +89,7 @@ return(
 
             
 
-        </div> */}
+        </div>
 
 
      </div>

@@ -25,7 +25,7 @@ function DashboardSide({backdropClick,hide}){
             <ul className="nav-list">
                 <li><Link to={"/"}  className="links"><RiDashboardLine/> Dashboard</Link></li>
                 <li><Link to={"/orders"}  className="links"><GiShoppingCart/> Place Orders</Link></li>
-                <li><Link to={"/orders"}  className="links"><RiFileList3Fill/> My Orders</Link></li>
+                <li><Link to={"/my-orders"}  className="links"><RiFileList3Fill/> My Orders</Link></li>
                 <li><Link to={"/user-management"}  className="links"><RiUserHeartLine /> Manage users</Link></li>
                 <li><Link to={"/settings"} className="links"><FaUsersCog style={{marginTop:14}}/> Settings</Link></li>
             </ul>

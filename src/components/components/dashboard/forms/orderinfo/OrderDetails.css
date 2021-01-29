@@ -1,0 +1,68 @@
+.order-details-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 400px;
+  min-width: 600px;
+  padding: 2rem;
+  border-radius: 2rem;
+  background: white;
+  box-shadow: 1px 1px 7px 5px rgb(0,0,0,0.2);
+}
+
+input:focus,
+textarea:focus,
+select:focus,
+button:focus {
+  outline: none;
+  box-shadow: 2px 2px 5px 3px rgb(41, 205, 156, 0.2);
+}
+
+.input-field .instructions {
+  border: 1px solid teal;
+  border-radius: 1rem;
+  width: 65%;
+  -webkit-appearance: none;
+  appearance: none;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-right: 20px;
+  padding-top: 1rem;
+
+}
+.instruction-field {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 15px;
+}
+
+.instruction-field label {
+    line-height: 40px;
+    width: 35%;
+    text-align: end;
+    margin-right: 35px;
+}
+
+.instruction-field input,textarea,select {
+    border: 1px solid teal;
+    border-radius: 3rem;
+    width: 65%;
+    -webkit-appearance: none;
+    appearance: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-right: 20px;
+}
+
+.order-info-buttons {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.space-between {
+  flex: 1;
+}
