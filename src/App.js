@@ -6,18 +6,14 @@ import "./App.css";
 import Navbar from "./components/components/Navbar/navbar";
 import Backdrop from "./components/components/backdrop/Backdrop";
 import Sidebar from "./components/components/sidebar/Sidebar";
-import Register from "./components/pages/main/auth/register";
-import Forgot from "./components/pages/main/auth/forgotpass";
 import Home from "./components/pages/main/home/home";
 import Howitworks from "./components/pages/main/howitworks/howitworks";
 import Pricing from "./components/pages/main/pricing/pricing";
 import Reviews from "./components/pages/main/reviews/reviews";
-import Chatbot from "./components/components/chatbot/ChatBox";
 import Button from "./components/components/whatsapp/whatsappbutton";
-import Footer from "./components/components/footer/footer";
-import Login from "./components/pages/main/auth/login";
 import Dashboard from "./components/pages/dashboard/dashboard/dashboard";
 import Orders from "./components/pages/dashboard/orders/orders";
+import MyOrder from "./components/pages/dashboard/myorder/Myorder"
 import UserManagement from "./components/pages/dashboard/manage-user/ManageUsers";
 import Settings from "./components/pages/dashboard/settings/settings";
 import DashboardNav from "./components/components/dashboard/dashboard-menu/MenuBar";
@@ -63,6 +59,7 @@ function App() {
               <Switch>
                 <Route exact path="/" component={Dashboard} />
                 <Route exact path="/orders" component={Orders} />
+                <Route exact path="/my-orders" component={MyOrder} />
                 <Route
                   exact
                   path="/user-management"

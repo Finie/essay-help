@@ -1,0 +1,102 @@
+.payment-contaier {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 400px;
+  min-width: 600px;
+  padding: 2rem;
+  border-radius: 2rem;
+  background: white;
+  box-shadow: 1px 1px 7px 5px rgb(0,0,0,0.2);
+}
+
+.radio-button-radio {
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 16px;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.radio-item {
+  margin-left: 1rem;
+}
+
+.card-layout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.card-payments {
+  margin-top: 3rem;
+  width: 100%;
+  min-height: 400px;
+}
+
+.payment-description {
+  display: flex;
+  padding-top: 3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.payment-description header {
+    font-size: larger;
+    font-weight: bold;
+}
+.card-secrion {
+  flex: 1;
+}
+
+.card-form-section {
+  flex: 2;
+  height: 100%;
+}
+
+.payment-buttons{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.cash-app-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+.cash-app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #02B142;
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 3rem;
+    border-radius: 2rem;
+    font-weight: bold;
+}
+
+
+.bank-app{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 3rem;
+    border-radius: 2rem;
+    font-weight: bold;
+}

@@ -4,15 +4,21 @@ import { Formik } from "formik";
 
 import "./PriceCalculation.css";
 import Dropdown from "../selector/dropdown";
+import Button from "../../../Button/Button";
+import EssayButton from "../../../Button/EssayButton";
 import { Academic } from "../../../../../assets/data/dropdown";
 
-function PriceCalculation() {
+function PriceCalculation({next}) {
   const [radio, setRadio] = useState("double");
   const [pages, setPages] = useState(1);
+  const [price, setPrice] = useState(9.99);
+  const [words, setWords] = useState(275);
 
   const onAdd = (e) => {
     if (pages > 0) {
       console.log("add clicked");
+      setPrice(9.99 * (pages + 1));
+      setWords(275 * (pages + 1));
       setPages(pages + 1);
       return;
     }
@@ -20,6 +26,8 @@ function PriceCalculation() {
 
   const onSubtract = (e) => {
     if (pages > 1) {
+      setPrice(9.99 * (pages - 1));
+      setWords(275 * (pages - 1));
       setPages(pages - 1);
       return;
     }
@@ -34,12 +42,10 @@ function PriceCalculation() {
       <div className="top-sep">
         <Formik>
           <div className="items_one">
-
             <div className="drop">
-            <Dropdown label="Academic Level" selection={Academic.data} />
-            <Dropdown label="Type of Work Level" selection={Academic.data} />
-            <Dropdown label="Subject" selection={Academic.data} />
-
+              <Dropdown label="Academic Level" selection={Academic.data} />
+              <Dropdown label="Type of Work Level" selection={Academic.data} />
+              <Dropdown label="Subject" selection={Academic.data} />
             </div>
 
             <div className="day-date">
@@ -53,16 +59,17 @@ function PriceCalculation() {
 
             <div className="page-division">
               <div className="days">
-                Number of pages <button onClick={onSubtract}>-</button>
+                Number of pages <button className="button" onClick={onSubtract}>-</button>
                 <div className="input-pages">
                   <input
                     type="number"
                     value={pages}
-                    style={{ width: "50px", textAlign:'center' }}
+                    style={{ width: "50px", textAlign: "center" }}
                   />
                 </div>
-                <button onClick={onAdd}>+</button>
+                <button className="button" onClick={onAdd}>+</button>
               </div>
+
 
               <div className="radio-button">
                 <div className="radio">
@@ -88,6 +95,27 @@ function PriceCalculation() {
                   </label>
                 </div>
               </div>
+
+
+              
+            </div>
+
+            <div className="discounts">
+              <header>{`${words} words`}</header>
+              <header>Discount Code</header>
+              <input
+                type="text"
+                name="discount"
+                placeholder={"Discount Code"}
+              />
+            </div>
+
+            <div className="total-price">
+              <header>{`Total Price $${price}`}</header>
+            </div>
+
+            <div className="price-button">
+            <EssayButton onClick={next}>Next step</EssayButton>
             </div>
           </div>
         </Formik>
