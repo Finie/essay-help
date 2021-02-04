@@ -14,6 +14,10 @@ function PriceCalculation({next}) {
   const [price, setPrice] = useState(9.99);
   const [words, setWords] = useState(275);
 
+  const handleNext = () =>{
+    next(price)
+  }
+
   const onAdd = (e) => {
     if (pages > 0) {
       console.log("add clicked");
@@ -115,7 +119,7 @@ function PriceCalculation({next}) {
             </div>
 
             <div className="price-button">
-            <EssayButton onClick={next}>Next step</EssayButton>
+            <EssayButton onClick={handleNext}>Next step</EssayButton>
             </div>
           </div>
         </Formik>

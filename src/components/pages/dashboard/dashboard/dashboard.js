@@ -1,23 +1,18 @@
-import React from 'react'
-import { RiMessage3Line } from 'react-icons/all'
+import React from "react";
+import { RiMessage3Line } from "react-icons/all";
 
-import Analysis from '../../../components/dashboard/analysis/analysis'
-import ChatBubleLeft from '../../../components/dashboard/messages/chat/chat-buble-left/chatBubleLeft'
-import ChatBubleRight from '../../../components/dashboard/messages/chat/chat-buble-right/chatBubleRight'
-import MessageItem from '../../../components/dashboard/messages/messateItem'
-import Iconcomp from '../../../components/icons/iconcomp'
+import Analysis from "../../../components/dashboard/analysis/analysis";
+import ChatBubleLeft from "../../../components/dashboard/messages/chat/chat-buble-left/chatBubleLeft";
+import ChatBubleRight from "../../../components/dashboard/messages/chat/chat-buble-right/chatBubleRight";
+import MessageItem from "../../../components/dashboard/messages/messateItem";
+import Iconcomp from "../../../components/icons/iconcomp";
 
+import "./dashboard.css";
 
-
-import './dashboard.css'
-
-
-
-function Dashboard(){
-
-    return(<div className="dashboard-container">
-
-        <div className="dash-item-holder">
+function Dashboard() {
+  return (
+    <div className="dashboard-container">
+      <div className="dash-item-holder">
 
             <div className="analysis">
                 <Analysis />
@@ -77,8 +72,8 @@ function Dashboard(){
 
             <h1>Dashboard footer will go here</h1>
         </div>
-    </div>)
+    </div>
+  );
 }
-
 
 export default Dashboard;

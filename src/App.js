@@ -16,17 +16,19 @@ import Orders from "./components/pages/dashboard/orders/orders";
 import MyOrder from "./components/pages/dashboard/myorder/Myorder"
 import UserManagement from "./components/pages/dashboard/manage-user/ManageUsers";
 import Settings from "./components/pages/dashboard/settings/settings";
-import DashboardNav from "./components/components/dashboard/dashboard-menu/MenuBar";
-import DashboardSide from "./components/components/dashboard/dashboard-sidebar/DashboardSide";
+import DashboardSide from "./components/components/dashboard/DashNavbar/DashboardSide";
 import Footers from "./components/components/footer/Footers";
+import DashboardNavbar from "./components/components/dashboard/DashNavbar/DashboardNavbar";
+import Test from "./components/pages/dashboard/test/Test";
 
 function App() {
-  const [isUserLoggedin, setIsUserLoggedin] = useState(true);
+  const [isUserLoggedin, setIsUserLoggedin] = useState(false);
   const [isSideDrawerOpen, setIsSideDrawerOpen] = useState(false);
   const [isDashboardOpen, setIsDashboardOpen] = useState(true);
 
   const dashboardToggle = () => {
     setIsDashboardOpen(!isDashboardOpen);
+    console.log("toggle the sidebar status: "+isDashboardOpen)
   };
 
   const drawerToggleButtonHandler = () => {
@@ -40,6 +42,7 @@ function App() {
   let backDrop = null;
 
   if (isSideDrawerOpen) {
+
     backDrop = <Backdrop backdropClick={backdropClickHandler} />;
   }
 
@@ -50,14 +53,13 @@ function App() {
           
           {isUserLoggedin ? (
             <Router>
-              <DashboardNav clickHandler={dashboardToggle} />
-              <DashboardSide
-                backdropClick={backdropClickHandler}
-                hide={isDashboardOpen}
-              />
+              <DashboardNavbar clickHandler={dashboardToggle} />
+
+              <DashboardSide show={isDashboardOpen} />
               {backDrop}
               <Switch>
-                <Route exact path="/" component={Dashboard} />
+                
+                <Route exact path="/:isDashboardOpen" render={(props)=>(<Test {...props} dashboardIsShowing={isDashboardOpen} />)} />                            
                 <Route exact path="/orders" component={Orders} />
                 <Route exact path="/my-orders" component={MyOrder} />
                 <Route

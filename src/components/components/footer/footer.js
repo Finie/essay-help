@@ -8,29 +8,7 @@ function Footer(){
 return(
     <div className="footer-container">
 
-<div className="footer-left">
 
-<div className="contact-info">
-    <div className="contact-ho">
-    <h3>Contact</h3>
-    </div>                
-    <div className="contact-item"><IoIosMail style={{width:"2rem", height:"2rem", marginRight:6,marginTop:8}}/><p>info@legalessaywriters.com</p></div>
-    <div className="contact-item"><MdPhone style={{width:"2rem", height:"2rem", marginRight:6,marginTop:8}}/><p>+1212345756</p></div>
-</div>
-
-<div className="payment-methods">
-    <div className="payment-ho">
-    <h3>payment methods</h3>
-    </div>
-    <div className="payment-icons">
-    <RiBankLine style={{width:"6rem", height:"3rem"}}/>
-    <CgPaypal style={{width:"6rem", height:"3rem"}}/>
-    <SiVisa style={{width:"6rem", height:"3rem"}} />
-    <SiMastercard style={{width:"6rem", height:"3rem"}}/>
-    </div>
-</div>
-
-</div>
 
 
         <div className="footer-left">

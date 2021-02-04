@@ -1,0 +1,18 @@
+.test-container{
+    width: 100%;
+    margin-top: 76px;
+    top: 0;
+    left: 0;
+    background: #ee82ee;
+    display: block;
+}
+
+
+
+@media(max-width: 768px){
+    .test-container{
+        display: block;
+        width: 100%;
+
+    }
+}
