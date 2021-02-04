@@ -27,7 +27,7 @@ return(
             </ul>
         </div>
         
-        <div className="sigin-button"><Link style={{ textDecoration: 'none' }} to={"/login"}><Button onclick={backdropClick} icon="AiOutlineLogin"> Sign in</Button></Link></div>
+        <div className="sigin-button"><Link style={{ textDecoration: 'none' }} to={"/"}><Button onclick={backdropClick} icon="AiOutlineLogin"> Sign in</Button></Link></div>
     </nav>
 </header>
 );
