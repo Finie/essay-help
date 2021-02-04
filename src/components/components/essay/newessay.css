@@ -152,3 +152,9 @@ button:disabled,button[disabled]{
     color: red;
     font-weight: 100;
 }
+
+
+.bottom-layout{
+    display: inline;
+    background: violet;
+}

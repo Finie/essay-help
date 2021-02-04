@@ -9,6 +9,8 @@ import {
   BsFillHeartFill,
 } from "react-icons/all";
 
+import { Link } from 'react-router-dom'
+
 import "./footeritem.css";
 
 const Footers = () => {
@@ -40,7 +42,7 @@ const Footers = () => {
                 marginTop: 8,
               }}
             />
-            <p>+1212345756</p>
+            <p>+1(906)-256-7650</p>
           </div>
         </div>
 
@@ -59,16 +61,18 @@ const Footers = () => {
       <div className="footer-right">
         <div className="navigation">
           <ul className="navigations">
-            <li>Home</li>
-            <li>How it works</li>
-            <li>Pricing</li>
-            <li>Reviews</li>
+            <li><Link style={{ textDecoration: 'none',color:'white' }} to={"/"}>Home</Link></li>
+            <li><Link style={{ textDecoration: 'none',color:'white'  }} to={"/howitworks"}>How it works</Link></li>
+            <li><Link style={{ textDecoration: 'none',color:'white'  }} to={"/pricing"}>Pricing</Link></li>
+            <li><Link style={{ textDecoration: 'none',color:'white'  }} to={"/reviews"}>Reviews</Link></li>
           </ul>
         </div>
 
         <div className="navigation-terms">
           <ul className="navigations-terms">
-            <li>Terms & Conditions</li>
+            <li>
+              <Link style={{ textDecoration: 'none',color:'white' }}>Terms & Conditions</Link>
+            </li>
             <li>Refund Policy</li>
             <li>Privacy Policy</li>
             <li>Revision Policy</li>

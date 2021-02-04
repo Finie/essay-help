@@ -6,11 +6,20 @@ import Dropdown from "../selector/dropdown";
 import Button from "../../../Button/EssayButton";
 
 const OrderDetails = (props) => {
+
+  const handleChange = (e) =>{
+    if(e.target.name === "topic"){
+      props.handleTopic(e.target.value)
+    }
+  }
+
+
+
   return (
     <div className="order-details-container">
       <div className="input-field">
         <label htmlFor="topic">Topic</label>
-        <input type="text" name="topic" placeholder={"Your Topic"} />
+        <input type="text" name="topic" placeholder={"Your Topic"}  onChange={handleChange}/>
       </div>
 
       <Dropdown label="Style" selection={StyleType.data} />

@@ -1,46 +1,41 @@
 import React, { useState } from "react";
 import { RiPaypalFill, RiBankLine } from "react-icons/all";
+import StripeCheckout from "react-stripe-checkout";
+import axios from 'axios'
 
 import "./Payment.css";
-import Cards from "react-credit-cards";
 import "react-credit-cards/es/styles-compiled.css";
 import Button from "../../../Button/EssayButton";
+import useLoader from "../../../../hooks/useLoader";
 
-const Payment = ({prev}) => {
+const Payment = ({ prev, pay, Price, Topic }) => {
   const [radio, setRadio] = useState("Paypal");
-  const [cardNumber, setCardNumber] = useState("");
-  const [cardName, setCardName] = useState("");
-  const [expiry, setExpiry] = useState("");
-  const [focus, setFocus] = useState("");
-  const [cvc, setCvc] = useState("");
+  const [Loading, isLoading, hideLoading] = useLoader()
+
+  const payment = () => {
+    pay(radio);
+  };
 
   const onChecked = (e) => {
     setRadio(e.target.value);
   };
 
-  const handleInputFocus = (e) => {
-    setFocus(e.target.name);
-  };
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target;
-
-    if (name === "number") {
-      setCardNumber(value);
-    } else if (name === "cvc") {
-      setCvc(value);
-    } else if (name === "expiry") {
-      setExpiry(value);
-    } else if (name === "name") {
-      setCardName(value);
-    }
+  const handleCardToken = async (token, addresses) => {
+    const product = {
+      name: Topic,
+      price: Price,
+    };
+    isLoading();
+    const response = await axios.post("http://localhost:5000/api/payment/card-checkout", {token, product});    
+    console.log(response);
+    hideLoading();
   };
 
   return (
     <div className="payment-contaier">
+      {Loading}
       <div className="radio-button-radio">
-
-      <div className="radio-item">
+        <div className="radio-item">
           <label>
             <input
               type="radio"
@@ -51,7 +46,6 @@ const Payment = ({prev}) => {
             PayPal
           </label>
         </div>
-
 
         <div className="radio-item">
           <label>
@@ -65,8 +59,6 @@ const Payment = ({prev}) => {
           </label>
         </div>
 
-      
-
         <div className="radio-item">
           <label>
             <input
@@ -79,8 +71,6 @@ const Payment = ({prev}) => {
           </label>
         </div>
 
-
-
         <div className="radio-item">
           <label>
             <input
@@ -92,7 +82,6 @@ const Payment = ({prev}) => {
             Bank
           </label>
         </div>
-
 
         <div className="payment-description">
           <header>{`Complete your checkout with ${radio} payments`}</header>
@@ -115,77 +104,25 @@ const Payment = ({prev}) => {
 
         {radio === "Paypal" && (
           <div className="bank-app">
-            <RiPaypalFill style={{ width: "3rem", height: "3rem", color:"#0070BA" }} />
-            <h3 style={{color:"#0070BA"}}>Paypal</h3>
+            <RiPaypalFill
+              style={{ width: "3rem", height: "3rem", color: "#0070BA" }}
+            />
+            <h3 style={{ color: "#0070BA" }}>Paypal</h3>
+          </div>
+        )}
+
+        {radio === "Card" && (
+          <div className="bank-app">
+            <StripeCheckout
+              stripeKey={
+                "pk_test_51IFR4XHKFiqVIwkfeSmfJa2ynEzbbGccHNc6f2OoYu1vv4eLLXvLEbcoeEARBe9HdjoPwA6TXbKbU8IIsjRkhr1d00ilbMpS64"
+              }
+              token={handleCardToken}
+              amount={20 * 100}
+            />
           </div>
         )}
       </div>
-
-      {radio === "Card" && (
-        <div className="card-payments">
-          <div className="card-layout">
-            <div className="card-secrion">
-              <Cards
-                cvc={cvc}
-                expiry={expiry}
-                focused={focus}
-                name={cardName}
-                number={cardNumber}
-              />
-            </div>
-
-            <div className="card-form-section">
-              <form className="form-input">
-                <div className="input-field">
-                  <input
-                    type="tel"
-                    name="number"
-                    pattern="[\d| ]{16,22}"
-                    required
-                    className="tele"
-                    maxLength={16}
-                    placeholder="Card Number"
-                    onChange={handleInputChange}
-                    onFocus={handleInputFocus}
-                  />
-                </div>
-
-                <div className="input-field">
-                  <input
-                    type="text"
-                    name="name"
-                    placeholder="Card holder Name"
-                    onChange={handleInputChange}
-                    onFocus={handleInputFocus}
-                  />
-                </div>
-
-                <div className="input-field">
-                  <input
-                    type="tel"
-                    name="expiry"
-                    maxLength={5}
-                    placeholder="Expiry"
-                    onChange={handleInputChange}
-                    onFocus={handleInputFocus}
-                  />
-                </div>
-
-                <div className="input-field">
-                  <input
-                    type="tel"
-                    name="cvc"
-                    placeholder="CVC"
-                    maxLength={3}
-                    onChange={handleInputChange}
-                    onFocus={handleInputFocus}
-                  />
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      )}
 
       <div className="payment-buttons">
         <div className="left-button">
@@ -193,7 +130,7 @@ const Payment = ({prev}) => {
         </div>
         <div className="space-between" />
         <div className="right-button">
-          <Button>Checkout</Button>
+          <Button onClick={payment}>Checkout</Button>
         </div>
       </div>
     </div>
